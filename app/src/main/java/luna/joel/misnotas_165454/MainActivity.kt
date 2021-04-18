@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
+import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.*
 
@@ -16,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         fab.setOnClickListener {
-            var intent = Intent(this, AgregarNotaActivity::class.java)
+            var intent = Intent(this, AgregarNota::class.java)
             startActivityForResult(intent, 123)
         }
 
@@ -71,7 +72,7 @@ class MainActivity : AppCompatActivity() {
         return folder
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+   override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
         if (requestCode == 123) {

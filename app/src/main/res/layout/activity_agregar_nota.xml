@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -11,16 +10,14 @@
         android:textColor="@color/primarytext"
         android:text="NOTA"
         android:textSize="24dp"
-        android:textAlignment="center">
-    </TextView>
+        android:textAlignment="center"/>
 
     <EditText
         android:id="@+id/et_titulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/primarytext"
-        android:hint="Título">
-    </EditText>
+        android:hint="Título"/>
 
     <EditText
         android:id="@+id/et_contenido"
@@ -30,8 +27,7 @@
         android:textColor="@color/secondarytext"
         android:inputType="textMultiLine"
         android:layout_weight="1"
-        android:gravity="top">
-    </EditText>
+        android:gravity="top"/>
 
     <Button
         android:id="@+id/btn_guardar"
@@ -39,6 +35,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
         android:textColor="@color/primarytext"
-        android:text="Guardar">
-    </Button>
+        android:text="Guardar"/>
+
 </LinearLayout>
+
